@@ -36,14 +36,11 @@ public class KetQuaController implements Initializable {
     private Connection conn = null;
     private PreparedStatement prepStatement = null;
     static int dung, sai;
-    static int dung1, sai1;
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         lblCauDung.setText(String.valueOf(dung));
         lblCauSai.setText(String.valueOf(sai));
-        lblCauDung.setText(String.valueOf(dung1));
-        lblCauSai.setText(String.valueOf(sai1));
     }
     
     @FXML

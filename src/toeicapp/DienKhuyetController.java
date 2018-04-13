@@ -201,10 +201,10 @@ public class DienKhuyetController implements Initializable {
 
         if (maDapAnDung.equals(maDapAn)) {
             soCauDung++;
-            KetQuaController.dung1 = soCauDung;
+            KetQuaController.dung = soCauDung;
         } else {
             soCauSai++;
-            KetQuaController.sai1 = soCauSai;
+            KetQuaController.sai = soCauSai;
         }
     }
     
