@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="247.0" prefWidth="600.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toeicapp.KetQuaController">
+   <children>
+      <GridPane>
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="139.0" minWidth="10.0" prefWidth="11.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="279.0" minWidth="10.0" prefWidth="134.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="406.0" minWidth="10.0" prefWidth="406.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="17.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label styleClass="validation" text="Số câu đúng:" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label styleClass="validation" text="Số câu sai:" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="lblCauDung" styleClass="validation" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label fx:id="lblCauSai" styleClass="validation" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="center" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="5">
+               <children>
+                  <Button fx:id="btnTrangChu" mnemonicParsing="false" onAction="#btnTrangChuClick" prefHeight="26.0" prefWidth="100.0" text="Trang chủ" />
+                  <Button mnemonicParsing="false" onAction="#btnThoatClick" prefHeight="26.0" prefWidth="100.0" text="Thoát" />
+               </children>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="mainTitle" text="BẢNG KẾT QUẢ" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowSpan="2" />
+         </children>
+      </GridPane>
+      <Separator prefWidth="200.0" />
+      <VBox prefHeight="38.0" prefWidth="590.0" styleClass="center">
+         <children>
+            <Label styleClass="bottom" text="Nguyễn Thanh An - Lê Danh Nhân @ 2018" />
+         </children>
+      </VBox>
+   </children>
+</VBox>

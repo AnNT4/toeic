@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="624.0" prefWidth="944.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toeicapp.QuanLyCauHoiController">
+   <children>
+      <AnchorPane prefHeight="397.0" prefWidth="973.0">
+         <children>
+            <Label layoutX="14.0" layoutY="41.0" text="Câu hỏi" />
+            <TextField fx:id="txtCauHoi" alignment="TOP_LEFT" layoutX="100.0" layoutY="36.0" prefHeight="95.0" prefWidth="339.0" promptText="Nhập câu hỏi..." />
+            <Label layoutX="457.0" layoutY="41.0" text="Đáp án A" />
+            <Label layoutX="457.0" layoutY="7.0" text="Loại câu hỏi" />
+            <ComboBox fx:id="cboLoaiCauHoi" layoutX="539.0" layoutY="2.0" onAction="#comboboxLoaiCauHoiClick" prefHeight="26.0" prefWidth="162.0" />
+            <TextField fx:id="txtDapAnA" layoutX="526.0" layoutY="36.0" prefHeight="26.0" prefWidth="384.0" promptText="Nhập đáp án A..." />
+            <TextField fx:id="txtDapAnB" layoutX="526.0" layoutY="70.0" prefHeight="26.0" prefWidth="384.0" promptText="Nhập đáp án B..." />
+            <TextField fx:id="txtDapAnC" layoutX="526.0" layoutY="106.0" prefHeight="26.0" prefWidth="384.0" promptText="Nhập đáp án C..." />
+            <TextField fx:id="txtDapAnD" layoutX="526.0" layoutY="142.0" prefHeight="26.0" prefWidth="384.0" promptText="Nhập đáp án D..." />
+            <Label layoutX="458.0" layoutY="75.0" text="Đáp án B" />
+            <Label layoutX="457.0" layoutY="111.0" text="Đáp án C" />
+            <Label layoutX="457.0" layoutY="147.0" text="Đáp án D" />
+            <Label layoutX="14.0" layoutY="147.0" text="Đáp án đúng" />
+            <Label layoutX="14.0" layoutY="181.0" text="Hình ảnh" />
+            <Label layoutX="458.0" layoutY="181.0" text="File Nghe" />
+            <TextField fx:id="txtTimKiem" layoutX="14.0" layoutY="370.0" onKeyPressed="#searchCauHoiKeyPress" prefHeight="26.0" prefWidth="384.0" promptText="Nhập nội dung tìm kiếm..." />
+            <Button fx:id="btnTrangChu" layoutX="412.0" layoutY="370.0" mnemonicParsing="false" onAction="#btnTrangChuClick" prefHeight="26.0" prefWidth="100.0" text="Trang Chủ" />
+            <Button fx:id="btnThemMoi" layoutX="522.0" layoutY="370.0" mnemonicParsing="false" onAction="#btnThemMoiClick" prefHeight="26.0" prefWidth="100.0" text="Thêm mới" />
+            <Button fx:id="btnCapNhat" disable="true" layoutX="632.0" layoutY="370.0" mnemonicParsing="false" onAction="#btnCapNhatClick" prefHeight="26.0" prefWidth="100.0" text="Cập nhật" />
+            <Button fx:id="btnXoa" disable="true" layoutX="741.0" layoutY="370.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" text="Xóa" />
+            <Button fx:id="btnChonAnh" disable="true" layoutX="327.0" layoutY="266.0" mnemonicParsing="false" onAction="#btnChonAnhClick" prefHeight="26.0" prefWidth="100.0" text="Chọn ảnh" />
+            <Button fx:id="btnChonAudio" disable="true" layoutX="766.0" layoutY="272.0" mnemonicParsing="false" onAction="#btnChonAudioClick" prefHeight="26.0" prefWidth="100.0" text="Chọn Audio" />
+            <HBox layoutX="100.0" layoutY="142.0" prefHeight="26.0" prefWidth="339.0">
+               <children>
+                  <RadioButton fx:id="radDapAnA" mnemonicParsing="false" selected="true" text="A">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="chon" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="radDapAnB" mnemonicParsing="false" text="B" toggleGroup="$chon" />
+                  <RadioButton fx:id="radDapAnC" mnemonicParsing="false" text="C" toggleGroup="$chon" />
+                  <RadioButton fx:id="radDapAnD" mnemonicParsing="false" text="D" toggleGroup="$chon" />
+               </children>
+            </HBox>
+            <Button fx:id="btnHuy" layoutX="851.0" layoutY="370.0" mnemonicParsing="false" onAction="#btnHuyClick" prefHeight="26.0" prefWidth="55.0" text="Huỷ" />
+            <ImageView fx:id="picCauHoi" fitHeight="150.0" fitWidth="300.0" layoutX="14.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true" />
+            <MediaView fx:id="mediaCauHoi" fitHeight="150.0" fitWidth="300.0" layoutX="458.0" layoutY="204.0" />
+         </children>
+      </AnchorPane>
+      <Separator prefWidth="200.0" />
+      <TableView fx:id="tblHienThi" onMouseClicked="#tableViewClicked" prefHeight="174.0" prefWidth="934.0" />
+      <Separator prefHeight="19.0" prefWidth="934.0" />
+      <VBox id="bottom" prefHeight="17.0" prefWidth="915.0" styleClass="center">
+         <children>
+            <Label styleClass="bottom" text="Nguyễn Thanh An - Lê Danh Nhân @ 2018" />
+         </children>
+      </VBox>
+   </children>
+</VBox>

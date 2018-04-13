@@ -1,0 +1,62 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 18, 2018, 8:22:10 PM
+    Author     : annt4
+*/
+
+GridPane, VBox{
+    -fx-font-family: Tahoma; 
+    -fx-font-size: 13; 
+    -fx-background-color: #D6DFF0; 
+}
+
+GridPane, VBox, HBox { 
+    -fx-spacing: 5; 
+    -fx-padding: 5; 
+} 
+
+Label.bottom{
+    -fx-text-fill: #4F2683; 
+    -fx-font-weight: bold; 
+    -fx-wrap-text: true;   
+}
+
+Label.signIn{
+    -fx-font-weight: bold; 
+}
+
+Label.validation{
+    -fx-text-fill: red;
+    -fx-font-weight: bold; 
+}
+
+Button{
+    -fx-background-color: blue;
+    -fx-font-weight: bold; 
+    -fx-text-fill: white; 
+}
+
+Text.mainSubject{
+    -fx-font-size: 45; 
+    -fx-font-weight: bold; 
+    -fx-fill: gold; 
+    -fx-stroke: blue; 
+    -fx-stroke-width: 2; 
+}
+
+.center { 
+    -fx-alignment: CENTER; 
+}
+
+Text.mainTitle{
+    -fx-font-size: 30; 
+    -fx-font-weight: bold; 
+    -fx-fill: gold; 
+    -fx-stroke: blue; 
+    -fx-stroke-width: 2; 
+}
+
